@@ -1,0 +1,98 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    min-height: 100dvh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+/* Timer */
+#timer{
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+#time-left {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Quiz Box*/
+#choices-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice {
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+
+}
+
+.choice:hover {
+    background-color: #ddd;
+}
+
+.choice.correct {
+    background-color: #28a745;
+    color: white;
+
+}
+
+.choice.wrong {
+    background-color: ¿#dc3545;
+    color: white;
+    
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color, 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
