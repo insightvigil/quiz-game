@@ -12,24 +12,42 @@
 <body>
     <header><nav></nav></header>
     <main>
-        <div class="quiz-container">
+        <div class="quiz-container" >
             <!-- Quiz Box -->
-            <div id="quiz-box">
+            <div id="quiz-box" >
                 <h1 id="question-number">Question 1</h1>
-                <h2 id="question-text">What is going to be the first question?</h2>
-                <div id="timer"> Time Left: <span id="time-left">10</span><small>s</small></div>
+                <h2 id="question-text">Loading Questions...</h2>
+                <div id="timer"> Time Left: <span id="time-left"></span><small>s</small></div>
                 <div id="choices-container">
-                    <button class="choice" type="button">Choice 1</button>
-                    <button class="choice" type="button">Choice 2</button>
-                    <button class="choice" type="button">Choice 3</button>
-                    <button class="choice" type="button">Choice 4</button>
+                
                 </div>
                 <button id="next-btn" class="btn" type="button" disabled>Next</button>
+            </div>
+            <!-- Loader -->
+            <div id="loader" style=" display:none">
+                <h2>Loading High Scores...</h2>
+            </div>
+
+            <!-- HighScores -->
+            <div id="high-score-container" style = "display:none;">
+                <table id="high-scores-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Score</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="high-scores-list">
+                    
+                    </tbody>
+                </table>
+                <button id="play-again-btn" class="btn" type="button">Play Again</button>
             </div>
         </div>
     </main>
     <footer></footer>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/f53a1cf40f.js" crossorigin="anonymous"></script>
 </body>
 </html>
